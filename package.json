@@ -1,0 +1,7 @@
+{
+  "name": "ai-integration",
+  "private": true,
+  "scripts": {
+    "deploy": "wrangler deploy"
+  }
+}
