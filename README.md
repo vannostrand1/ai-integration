@@ -1,12 +1,14 @@
 # AI Integration
 
-Static origin for Google Cloud / Google Developers Console.
+Cloudflare Pages settings that work for this repo:
 
-## Cloudflare Pages
-
-- Framework: None
-- Build command: (empty)
-- Output directory: `/` or `.`
 - Production branch: `main`
+- Framework preset: None
+- Build command: `exit 0`
+- Build output directory: `public`
+- Root directory: `/` (empty)
 
-After deploy, use the `*.pages.dev` HTTPS URL as an authorized JavaScript origin.
+Do not choose Workers. Choose **Pages** → Connect to Git → `vannostrand1/ai-integration`.
+
+After a green deploy, use the `*.pages.dev` URL in Google Cloud as the authorized origin.
+The repo `CNAME` file points at `xyzwft.com`. Only attach that domain in Cloudflare after DNS is pointed at Pages.
