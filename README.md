@@ -1,13 +1,24 @@
 # AI Integration
 
-Minimal public origin page for Google Cloud / Google Developers Console setup.
+Public origin for Google Cloud / Google Developers Console.
 
-## GitHub Pages
+Intended live host: **https://xyzwft.com** (GoDaddy-owned).
 
-1. Repo Settings → Pages
-2. Source: Deploy from a branch
-3. Branch: `main` / `/` (root)
-4. Save
+## DNS at GoDaddy (apex + www)
 
-Site URL after Pages is on:
-`https://vannostrand1.github.io/ai-integration/`
+Point the domain at GitHub Pages:
+
+**A records** for `@` (xyzwft.com):
+
+- `185.199.108.153`
+- `185.199.109.153`
+- `185.199.110.153`
+- `185.199.111.153`
+
+**CNAME** for `www`:
+
+- `www` → `vannostrand1.github.io`
+
+Then in the repo: Settings → Pages → Custom domain `xyzwft.com` → Enable HTTPS.
+
+Fallback Pages URL: `https://vannostrand1.github.io/ai-integration/`
